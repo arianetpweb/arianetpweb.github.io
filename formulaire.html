@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Formulaire</title>
+        <link rel="stylesheet" href="./bootstrap.min.css" />
+        <link rel="stylesheet" href="formulaire.css" />
+    </head>
+    <body>
+        <h1 class="text-center my-3">Faites votre enregistrement ici !</h1>
+
+        <hr />
+
+        <div class="mx-3 my-5">
+            <form action="">
+                <div id="informations_personnelles">
+                    <h2 class="text-end my-3">Informations personnelles</h2>
+                    <div class="mb-3">
+                        <label for="nom" class="form-label"
+                            >Entrez votre nom</label
+                        >
+                        <input type="text" class="form-control" id="nom" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="prenom" class="form-label"
+                            >Entrez votre prénom</label
+                        >
+                        <input type="text" class="form-control" id="prenom" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="description" class="form-label"
+                            >Décrivez vous !</label
+                        >
+                        <textarea
+                            class="form-control"
+                            id="description"
+                            rows="3"
+                        ></textarea>
+                    </div>
+                </div>
+
+                <div id="compte_access" class="my-5">
+                    <h2 class="text-end my-3">Compte Access</h2>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label"
+                            >Entrez votre adresse électronique</label
+                        >
+                        <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            placeholder="info@domaine.com"
+                        />
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label"
+                            >Entrez votre mot de passe</label
+                        >
+                        <input
+                            type="password"
+                            class="form-control"
+                            id="password"
+                        />
+                    </div>
+                </div>
+
+                <div id="sexe">
+                    <h2 class="text-end my-3">Sexe</h2>
+                    <div class="form-check">
+                        <div>
+                            <label class="form-check-label">
+                                <input
+                                    type="radio"
+                                    class="form-check-input"
+                                    name="sexe"
+                                    id="richesse"
+                                />
+                                Masculin
+                            </label>
+                        </div>
+
+                        <div>
+                            <label class="form-check-label">
+                                <input
+                                    type="radio"
+                                    class="form-check-input"
+                                    name="sexe"
+                                    id="celebrite"
+                                />
+                                Féminin
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="diplomes">
+                    <h2 class="text-end my-3">Diplomes</h2>
+                    <div class="form-check">
+                        <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="licence"
+                        />
+                        <label class="form-check-label" for="licence"
+                            >Licence</label
+                        >
+                    </div>
+
+                    <div class="form-check">
+                        <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="bac"
+                        />
+                        <label class="form-check-label" for="bac">BAC</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="bepc"
+                        />
+                        <label class="form-check-label" for="bepc">BEPC</label>
+                    </div>
+                    <div class="form-check">
+                        <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="cep"
+                        />
+                        <label class="form-check-label" for="cep">CEP</label>
+                    </div>
+                </div>
+
+                <div id="ambitions">
+                    <h2 class="text-end my-3">Quelle est votre ambition ?</h2>
+                    <div class="form-check">
+                        <div>
+                            <label class="form-check-label">
+                                <input
+                                    type="radio"
+                                    class="form-check-input"
+                                    name="ambition"
+                                    id="richesse"
+                                />
+                                Etre riche
+                            </label>
+                        </div>
+
+                        <div>
+                            <label class="form-check-label">
+                                <input
+                                    type="radio"
+                                    class="form-check-input"
+                                    name="ambition"
+                                    id="celebrite"
+                                />
+                                Etre célèbre
+                            </label>
+                        </div>
+                        <div>
+                            <label class="form-check-label">
+                                <input
+                                    type="radio"
+                                    class="form-check-input"
+                                    name="ambition"
+                                    id="celebrite"
+                                />
+                                Etre encore plus intelligent
+                            </label>
+                        </div>
+                        <div>
+                            <label class="form-check-label">
+                                <input
+                                    type="radio"
+                                    class="form-check-input"
+                                    name="ambition"
+                                    id="celebrite"
+                                />
+                                Autre
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="boutons" class="my-5 d-flex justify-content-around">
+                    <button class="btn btn-primary">Enregistrer</button>
+                    <button class="btn btn-danger">Effacer</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
